@@ -31,3 +31,7 @@ nav {
   align-items: center;
   justify-content: center;
 }
+
+label:not(:last-child) {
+  margin-right: 1rem;
+}
