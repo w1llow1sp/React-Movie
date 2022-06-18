@@ -16,6 +16,14 @@ class Main extends React.Component {
       .then((data) => this.setState({ movies: data.Search }));
   }
 
+  // Функция для обновления State и отрисовке фильмов по запросу
+
+  searchMovies = (str) => {
+    fetch(`http://www.omdbapi.com/?apikey=5d733b0b&s=${str}`)
+      .then((response) => response.json())
+      .then((data) => this.setState({ movies: data.Search }));
+  };
+
   render() {
     // Делаем прелоадер и деструкторизацию
 
@@ -23,7 +31,7 @@ class Main extends React.Component {
 
     return (
       <main className="container content">
-        <Search />
+        <Search searchMovies={this.searchMovies} />
         {movies.length ? <Movies movies={this.state.movies} /> : <Preloader />}
       </main>
     );
