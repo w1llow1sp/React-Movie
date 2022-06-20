@@ -3,8 +3,9 @@
 
  ## React-Movie -- задание для обучения
  
+ ![T8HCmypWsj](https://user-images.githubusercontent.com/98582981/174566851-8ad23159-7ef7-43e2-97c9-3d0cf1b81aee.gif)
 
- **Посмотреть проект можно по ссылке:**
+ **Посмотреть проект можно по ссылке:** https://w1llow1sp.github.io/React-Movie/
  
  -----
  ## Архитектура проекта 
